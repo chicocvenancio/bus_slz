@@ -1,0 +1,5 @@
+buslz:
+    build: .
+    command: npm -V
+    volumes:
+        - .:/home/app/buslz

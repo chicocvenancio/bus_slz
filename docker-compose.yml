@@ -3,3 +3,4 @@ buslz:
     command: npm -V
     volumes:
         - .:/home/app/buslz
+        - /home/app/buslz/node_modules

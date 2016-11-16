@@ -1,9 +1,0 @@
-buslz:
-    build: .
-    ports:
-        - '3000:3000'
-    volumes:
-        - .:/home/app/buslz
-        - /home/app/buslz/node_modules
-    external_links:
-        - mongo_buslz

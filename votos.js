@@ -17,7 +17,7 @@ Plotly.d3.csv('votos_por_predio.csv', function(err, rows){
     data.hoverinfo= "text";
     data.mode = "markers";
     data.subplot = "mapbox";
-    data.marker = {symbol: 'circle', opacity: 1, sizemin: 0, sizemode: 'diameter', size: unpack(rows, 'validos'), color : unpack(rows, 'per_edivaldo'), colorscale: 'Bluered', sizeref: 200.4};
+    data.marker = {symbol: 'circle', opacity: 1, sizemin: 10, sizemode: 'area', size: unpack(rows, 'validos'), color : unpack(rows, 'per_edivaldo'), colorscale: 'Bluered', sizeref: 40.4};
     layout = {mapbox: { accesstoken:'pk.eyJ1IjoiY2hpY29jdmVuYW5jaW8iLCJhIjoiY2l2bGY4NGtrMGFodjJ6bGJwNGp5YW91aSJ9.Z2U9F6OCm96k8uzS6eiGJQ', center:{lon: -44.29679189209759, lat: -2.5450488657873223}, zoom: 11.681942092423549},
        // width: 926,
         height: 720
